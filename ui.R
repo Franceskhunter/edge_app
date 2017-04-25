@@ -9,9 +9,9 @@ fluidPage(
             tags$hr(),
             h1("How to use this app"),
             p("1. Upload a phylogeny in Newick format (first button above). This will automatically be imputed to contain any missing species using the 'congeneric.merge' merge/replace method."),
-            tags$a(href="https://github.com/willpearse/pd_app/raw/master/test.tre", "For an example of a mammal phylogeny in Newick format, click here!"),
+            tags$a(href="https://github.com/willpearse/edge_app/raw/master/test.tre", "For an example of a mammal phylogeny in Newick format, click here!"),
             p("3. Upload the threat information for each species. This should contain IUCN Red List scores, either as numbers (following Isaac et al. 2006) or as text (e.g., 'least concern', etc.) (second button above). The first column should be species' names (genus_species), the second the IUCN score, and there should be only one entry per species."),
-            tags$a(href="https://github.com/willpearse/pd_app/raw/master/test.csv", "For an example of the format for mammals, click here!"),
+            tags$a(href="https://github.com/willpearse/edge_app/raw/master/test.csv", "For an example of the format for mammals, click here!"),
 
             p("Once you've done this, there will be a slight delay, and then classic EDGE and EDM scores (along with the ED values upon which they are based) will be returned."),
             h1("Citations"),
