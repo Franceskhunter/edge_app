@@ -5,8 +5,9 @@ library(pez)
 function(input, output) {
     output$edge.results <- renderTable({
         # Load data and impute
-        if(!is.null(input$tree)){
+        if(!is.null(input$phy)){
             tree <- read.tree(input$phy$datapath)
+            print(tree)
             tree$tip.label <- tolower(tree$tip.label)
             tree$tip.label <- gsub(" ", "_", tree$tip.label)
         }
